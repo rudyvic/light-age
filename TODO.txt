@@ -28,8 +28,6 @@ _
 ********
 OTHER
 ********
-_ write the devlog on itch.io (images and gifs)
-_ write the devlog on itch.io for the BW filter
 _ do bootsplash screen
 _ complete walkthrough (and a trailer?)
 _ add languages support (EN, IT)
