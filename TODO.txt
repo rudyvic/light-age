@@ -1,0 +1,42 @@
+********
+GAMEPLAY
+********
+_ 
+
+
+********
+GRAPHIC
+********
+_ light animation for the Title screen
+_ light on/off in later levels
+_ animate enemies eye (at least in the first level) from idle to patrol mode
+_ different animation for enemies in chase mode / patrol mode
+
+
+********
+UI
+********
+_ 
+
+
+********
+MUSIC
+********
+_ 
+
+
+********
+OTHER
+********
+_ write the devlog on itch.io (images and gifs)
+_ write the devlog on itch.io for the BW filter
+_ do bootsplash screen
+_ complete walkthrough (and a trailer?)
+_ add languages support (EN, IT)
+
+
+********
+BUGS
+********
+_ 
+

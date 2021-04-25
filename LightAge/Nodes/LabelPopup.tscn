@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://bw_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scripts/LabelPopup.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "show"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("lbl:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+
+[node name="LabelPopup" type="Node2D"]
+z_index = 10
+z_as_relative = false
+script = ExtResource( 2 )
+
+[node name="lbl" type="Label" parent="."]
+light_mask = 0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -462.0
+margin_right = 462.0
+margin_bottom = 122.0
+theme = ExtResource( 1 )
+text = "text"
+align = 1
+percent_visible = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/show = SubResource( 1 )

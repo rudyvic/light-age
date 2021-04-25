@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/GoalTile.gd" type="Script" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/tiles.png-2d14e214342b3d6dcbc22d3be84243d2.stex"
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = SubResource( 1 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 13.3729, 13.9478 )
+
+[node name="GoalTile" type="Sprite"]
+self_modulate = Color( 0.286275, 0.286275, 0.286275, 1 )
+texture = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 0, -0.231964 )
+input_pickable = false
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

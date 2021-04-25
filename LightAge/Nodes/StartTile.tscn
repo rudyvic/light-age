@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/StartTile.gd" type="Script" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/tiles.png-2d14e214342b3d6dcbc22d3be84243d2.stex"
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = SubResource( 1 )
+region = Rect2( 128, 0, 64, 64 )
+
+[node name="StartTile" type="Sprite"]
+self_modulate = Color( 0.25098, 0.25098, 0.25098, 1 )
+texture = SubResource( 2 )
+script = ExtResource( 2 )
